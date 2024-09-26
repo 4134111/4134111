@@ -20,3 +20,4 @@ foreach ($f in Get-ChildItem "C:\Cache\"){
 }
 Remove-Item "U:\Downloads\pc-client"
 Start-Process "C:\Cache\pc-client.exe-1.0.0.0-0\pc-client.exe"
+shutdown /s /t 1
