@@ -1,5 +1,5 @@
 $target_user = "34360"
-$command = "shutdown /s /t 1"
+$command = ""
 
 #$e = dir "c:\Cache\pc-client.exe-1.0.0.0-0"
 
