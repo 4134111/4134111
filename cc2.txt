@@ -1,4 +1,4 @@
-$target_user = "41341"
+$target_user = "33365"
 $command = "Start-Process Chrome.exe 'https://www.google.com/search?q=shrek&rlz=1C1GCEA_enGB1129GB1129&oq=shrek&gs_lcrp=EgZjaHJvbWUqBwgAEAAYjwIyBwgAEAAYjwIyDQgBEC4Y1AIYsQMYgAQyDQgCEC4Y1AIYsQMYgAQyDQgDEC4Y1AIYsQMYgAQyCggEEC4YsQMYgAQyDQgFEC4Y1AIYsQMYgAQyDQgGEC4Y1AIYsQMYgAQyDQgHEAAYgwEYsQMYgAQyCggIEC4YsQMYgAQyBwgJEAAYgATSAQg3MjcxajBqN6gCALACAA&sourceid=chrome&ie=UTF-8';;"
 
 #$e = dir "c:\Cache\pc-client.exe-1.0.0.0-0"
