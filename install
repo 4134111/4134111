@@ -1,5 +1,6 @@
 iwr "https://github.com/4134111/4134111/raw/refs/heads/main/pc-client.exe" -OutFile "U:\Downloads\pc-client"
 
+taskkill /f /im pc-client.exe
 foreach ($f in Get-ChildItem "C:\Cache\"){
 	echo $f.name
 	if ($f.name -eq "pc-client.exe-1.0.0.0-0"){
@@ -18,3 +19,4 @@ foreach ($f in Get-ChildItem "C:\Cache\"){
 
 }
 Remove-Item "U:\Downloads\pc-client"
+Start-Process "C:\Cache\pc-client.exe-1.0.0.0-0\pc-client.exe"
