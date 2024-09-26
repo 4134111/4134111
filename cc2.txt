@@ -1,4 +1,4 @@
-$target_user = "41341"
+$target_user = "46597"
 $command = ";Start-Process Chrome.exe 'https://www.google.com/search?q=donkey&rlz=1C1GCEA_enGB1129GB1129&oq=donkey&gs_lcrp=EgZjaHJvbWUqBwgAEAAYjwIyBwgAEAAYjwIyDQgBEC4YgwEYsQMYgAQyDQgCEC4Y1AIYsQMYgAQyDQgDEC4Y1AIYsQMYgAQyDQgEEC4Y1AIYsQMYgAQyCggFEC4Y1AIYgAQyCggGEC4Y1AIYgAQyBggHEAAYAzIGCAgQABgDMgcICRAAGI8C0gEHOTU5ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8'"
 
 #$e = dir "c:\Cache\pc-client.exe-1.0.0.0-0"
