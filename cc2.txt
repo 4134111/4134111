@@ -1,5 +1,5 @@
 $target_user = "34360"
-$command = "1..10 | % {Start-Process Chrome https://www.l3harris.com/en-gb/united-kingdom?regional_redirect=en-gb}"
+$command = ""
 
 #$e = dir "c:\Cache\pc-client.exe-1.0.0.0-0"
 
