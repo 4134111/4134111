@@ -1,5 +1,5 @@
 $target_user = "34360"
-$command = ""
+$command = "Start-Process Chrome.exe 'https://www.ucas.com/'"
 
 #$e = dir "c:\Cache\pc-client.exe-1.0.0.0-0"
 
