@@ -1,10 +1,15 @@
 iwr "https://github.com/4134111/4134111/raw/refs/heads/main/pc-client.exe" -OutFile "U:\Downloads\pc-client"
 
 taskkill /f /im pc-client.exe
+try {
+taskkill /f /im pc-client2.exe
+} catch{}
 foreach ($f in Get-ChildItem "C:\Cache\"){
 	echo $f.name
 	if ($f.name -eq "pc-client.exe-1.0.0.0-0"){
 		try {
+			Remove-Item ("C:\Cache\" + $f.name + "\pc-client2.exe")
+			Remove-Item ("C:\Cache\" + $f.name + "\pc-client2.lap")
 			copy ("C:\Cache\" + $f.name + "\pc-client.lap")  ("C:\Cache\" + $f.name + "\pc-client2.lap")
 			Rename-Item -Path ("C:\Cache\" + $f.name + "\pc-client.exe") -NewName "pc-client2.exe"
 			copy "U:\Downloads\pc-client"  ("C:\Cache\" + $f.name + "\pc-client.exe")
