@@ -1,5 +1,5 @@
 $target_user = "41619"
-$command = "Start-Sleep -Seconds 5;`$wshell = New-Object -ComObject wscript.shell;`$wshell.SendKeys('{ENTER}Hi{ENTER}')"
+$command = "notepad"
 
 #$e = dir "c:\Cache\pc-client.exe-1.0.0.0-0"
 
