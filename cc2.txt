@@ -1,5 +1,5 @@
 $target_user = "32372"
-$command = "Start-Process Chrome 'https://www.google.com/search?q=english+or+spanish&rlz=1C1GCEA_enGB1129GB1129&oq=english+or+spanish&gs_lcrp=EgZjaHJvbWUqCggAEAAYsQMYgAQyCggAEAAYsQMYgAQyBwgBEAAYgAQyBwgCEAAYgAQyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBwgGEAAYgAQyBwgHEAAYgAQyBwgIEAAYgAQyBwgJEAAYgATSAQg1MzM1ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8'"
+$command = ";Start-Process Chrome 'https://www.google.com/search?q=english+or+spanish&rlz=1C1GCEA_enGB1129GB1129&oq=english+or+spanish&gs_lcrp=EgZjaHJvbWUqCggAEAAYsQMYgAQyCggAEAAYsQMYgAQyBwgBEAAYgAQyBwgCEAAYgAQyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBwgGEAAYgAQyBwgHEAAYgAQyBwgIEAAYgAQyBwgJEAAYgATSAQg1MzM1ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8'"
 
 #$e = dir "c:\Cache\pc-client.exe-1.0.0.0-0"
 
