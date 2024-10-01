@@ -172,7 +172,7 @@ Add-Type $pinvokeCode -ErrorAction SilentlyContinue
 [Resolution.PrmaryScreenResolution]::ChangeResolution() 
 }
 
-for ($i = 1; $i -le 10; $i++) {
+for ($i = 1; $i -le 6; $i++) {
     Set-ScreenResolutionAndOrientation
-    Start-Sleep 0.5
+    Start-Sleep 1
  }
