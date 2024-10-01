@@ -1,4 +1,4 @@
-$target_user = "49134"
+$target_user = ""
 $command = "`$wshell = New-Object -ComObject wscript.shell;
 `$wshell.SendKeys('Domestic abuseDomestic abuseDomestic abuseDomestic abuseDomestic abuseDomestic abuseDomestic abuseDomestic abuseDomestic abuseDomestic abuseDomestic abuseDomestic abuseDomestic abuseDomestic abuseDomestic abuseDomestic abuseDomestic abuse{ENTER}')"
 
