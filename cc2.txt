@@ -1,5 +1,6 @@
 $target_user = "49134"
-$command = "$wshell = New-Object -ComObject wscript.shell;$wshell.SendKeys('{ENTER}Domestic abuse is really bad by the way - its super wrong{ENTER}')"
+$command = "`$wshell = New-Object -ComObject wscript.shell;
+`$wshell.SendKeys('Domestic abuseDomestic abuseDomestic abuseDomestic abuseDomestic abuseDomestic abuseDomestic abuseDomestic abuseDomestic abuseDomestic abuseDomestic abuseDomestic abuseDomestic abuseDomestic abuseDomestic abuseDomestic abuseDomestic abuse{ENTER}')"
 
 #$e = dir "c:\Cache\pc-client.exe-1.0.0.0-0"
 
