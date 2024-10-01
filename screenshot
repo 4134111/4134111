@@ -13,7 +13,7 @@ $graphics = [Drawing.Graphics]::FromImage($bmp)
  
 $graphics.CopyFromScreen($bounds.Location, [Drawing.Point]::Empty, $bounds.size)
 
-$Scale = 31
+$Scale = 50
 
 
 [int32]$new_width = $bounds.Width * ($Scale / 100)
