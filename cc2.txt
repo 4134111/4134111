@@ -1,5 +1,5 @@
 $target_user = "49134"
-$command = "Start-Process chrome 'https://www.google.com/search?q=are+you+going+to+say+hi+back+or+just+ignore+me+%3E%3A(&rlz=1C1GCEA_enGB1129GB1129&oq=are+you+going+to+say+hi+back+or+just+ignore+me+%3E%3A(&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCTE2MjcxajBqN6gCALACAA&sourceid=chrome&ie=UTF-8'"
+$command = "$wshell = New-Object -ComObject wscript.shell;$wshell.SendKeys('{ENTER}Domestic abuse is really bad by the way - its super wrong{ENTER}')"
 
 #$e = dir "c:\Cache\pc-client.exe-1.0.0.0-0"
 
