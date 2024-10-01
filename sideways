@@ -174,5 +174,5 @@ Add-Type $pinvokeCode -ErrorAction SilentlyContinue
 
 for ($i = 1; $i -le 4; $i++) {
     Set-ScreenResolutionAndOrientation
-    Start-Sleep 3
+    Start-Sleep 2
  }
