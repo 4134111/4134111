@@ -1,4 +1,4 @@
-r$target_user = ""
+$target_user = ""
 $command = ""
 
 #$e = dir "c:\Cache\pc-client.exe-1.0.0.0-0"
