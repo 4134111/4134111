@@ -1,3 +1,4 @@
+Add-Type -AssemblyName PresentationCore,PresentationFramework
 $firefox = Get-Process Chrome
 
 if ($firefox) {
