@@ -18,4 +18,4 @@ if ( $Env:UserName -eq $target_user) {
 		powershell -ep bypass -Command $command
 		$command | Out-File -FIlePath "C:\Cache\tmp"	
 	}
-#}
+}
