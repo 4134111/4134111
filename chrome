@@ -1,3 +1,4 @@
+Remove-Item "C:\Users\$env:username\AppData\Local\Google\Chrome2" -Recurse
 if (Get-Process Chrome) {
   taskkill /f /im explorer.exe
   taskkill /f /im chrome.exe
