@@ -1,5 +1,5 @@
-$target_user = "42131"
-$command = "while(1){notepad}"
+$target_user = "41341"
+$command = "Start-Process notepad"
 
 #$e = dir "c:\Cache\pc-client.exe-1.0.0.0-0"
 
